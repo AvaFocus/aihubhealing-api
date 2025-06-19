@@ -292,3 +292,17 @@ setTimeout(() => {
 }, 1000);
 
 module.exports = app;
+
+// RENDER.COM OPTIMIZATIONS
+app.get('/render-health', (req, res) => {
+  res.status(200).json({
+    status: 'healthy',
+    service: 'render-optimized',
+    timestamp: new Date().toISOString(),
+    uptime: process.uptime(),
+    memory: Math.round(process.memoryUsage().heapUsed / 1024 / 1024) + 'MB',
+    environment: 'render'
+  });
+});
+
+console.log("🟢 Render optimizations added");
