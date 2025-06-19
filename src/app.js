@@ -1,13 +1,12 @@
 const express = require('express');
 const cors = require('cors');
 const helmet = require('helmet');
-mongoose
 const morgan = require('morgan');
 const mongoose = require('mongoose');
 
 const app = express();
 
-//T Security & logging middleware
+// Security & logging middleware
 app.use(helmet());
 app.use(cors());
 app.use(morgan('combined'));
