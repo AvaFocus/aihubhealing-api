@@ -1,0 +1,15 @@
+node_modules/
+logs/
+*.log
+.env
+.DS_Store
+src/app.js.backup
+src/app.js.broken
+src/app.js.old
+dist/
+build/
+.vscode/
+.idea/
+*.tmp
+*.temp
+coverage/
