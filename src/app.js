@@ -1,12 +1,13 @@
 const express = require('express');
 const cors = require('cors');
 const helmet = require('helmet');
-const morgan = require('morgan');
+mongooset
+tzconst morgan = require('morgan');
 const mongoose = require('mongoose');
 
 const app = express();
 
-// Security & logging middleware
+//T Security & logging middleware
 app.use(helmet());
 app.use(cors());
 app.use(morgan('combined'));
@@ -23,7 +24,7 @@ mongoose.connection.on('connected', () => {
   console.log('✅ MongoDB connected successfully');
 });
 
-connection.on('error', (err) => {
+mongoose.connection.on('error', (err) => {
   console.error('❌ MongoDB connection error:', err);
 });
 
