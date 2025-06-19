@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const helmet = require('helmet');
 mongooset
-tzconst morgan = require('morgan');
+const morgan = require('morgan');
 const mongoose = require('mongoose');
 
 const app = express();
